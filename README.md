@@ -10,7 +10,7 @@ In many scenarios there is a high number of the predictors of a variable which w
 
 In this work, the feature selection criterion is the highest r-squared contribution with a contribution threshold the user decides. This threshold tells the iteration to go on until the added features stop improving the r-squared score by the desired amount. The model calculates the AIC's of each fit in each iteration. If k is the number of parameters in the model, and L is the maximum likelihood of the model, the AIC is calculated as the following. 
 
-> −2*ln(L)+2*k  
+> AIC = −2*ln(L) + 2*k  
 
 As you can see as the likelihood increases, AIC decreases. By contrast, when the number of features in the model increases the value of AIC increases. This means that the AIC punishes the model for having more parameters which is source of complexity and possibly overfit. This is why, in comparison the lower the AIC is, the better. You could omit AIC part from the code, if that does not add value to your project.
 
