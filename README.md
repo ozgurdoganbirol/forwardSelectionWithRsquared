@@ -4,7 +4,7 @@ I needed to perform feature selection for a multivariate linear regression for a
 
 ## Forward Selection
 
-In many scenarios there is a high number of the predictors of a variable which we claim can be explained with a linear model. In that case, we need to find robust ways of selecting the best features. One of the best methods to do this is the forward selection. It is based on adding one feature to the model in each iteration, which has the best F-test significance results among others. Each iteration, the existing model is seperately fitted with the features that are currently not in the model. The feature with best improvement is decided. The process is repeated. When none of the added features contribute to the model significantly, the process comes to an end.
+In many scenarios there are a high number of the predictors of a variable which we claim can be explained with a linear model. In that case, we need to find robust ways of selecting the best features. One of the best methods to do this is the forward selection. It is based on adding one feature to the model in each iteration, which has the best F-test significance results among others. Each iteration, the existing model is seperately fitted with each feature which is currently not in the model. The feature with best contribution is decided. The process is repeated. When none of the added features contribute to the model significantly, the process comes to an end.
 
 ## R-squared and AIC
 
