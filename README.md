@@ -46,3 +46,6 @@ forw_selc_R2<- function(data,predicted,max_iter,improvement_treshold){
 	}
 }
 ```
+## Final Comments
+
+Please keep in mind that this function can perform up to n*(n+1)/2 multivariate linear regression fits for a dataset with n features. This can quickly become expensive. This code is not optimized. I suggest binary encoding of categorical variables as new features and normalization of continuous features before feeding the dataset into the model. I hope this has been helpful.
