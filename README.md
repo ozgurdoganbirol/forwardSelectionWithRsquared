@@ -16,7 +16,7 @@ As you can see as the likelihood increases, AIC decreases. By contrast, when the
 
 ## Explanation of Code and Pseudocode
 
-The "forw_selc_R2" function takes data, maximum iterations the user like (limit of how many times the function needs to search for new features), and the improvement threshold for r-squared. The while loop on the outside wraps everything and stops only when no feature could not improve the r-squared score by at least the improvement threshold no more or it hits the maximum number of iterations. The inner for loop performs the forward selection. When a new model is decided, the outer while loop subjects the new model to the for loop again and again until it stops. The following pseudocode shows how things work out. 
+The "forw_selc_R2" function takes data, maximum iterations the user like (limit of how many times the function needs to search for new features), and the improvement threshold for r-squared. The while loop on the outside wraps everything and stops only when no feature could not improve the r-squared score by at least the improvement threshold no more or it hits the maximum number of iterations. The inner for loop performs the forward selection. When a new model is decided, the outer while loop subjects the new model to the for loop again and again until it stops. The following pseudocode is a representation of the code.
 
 ```
 forw_selc_R2<- function(data,predicted,max_iter,improvement_treshold){
